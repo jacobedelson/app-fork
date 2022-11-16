@@ -4,6 +4,6 @@ body{
 input{
     background-color:yellow
 }
-#res:hover{
+#operator:hover ~ #res {
     color:red
 }
