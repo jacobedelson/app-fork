@@ -1,12 +1,18 @@
-<input id="x" size=5 value=9><button>double it</button>
-<span id="res">...</span>
 
+<!-- UI -->
+<input id="x" size=10 value=9> x 2 = <span id="res">...</span>
 
-<script>
-    let x = document.getElementById('x')
-    x.onkeyup=evt=>{console.log(evt)}
-</script>
-
+<!-- loading code -->
 <script src="jonas.js"></script>
 
+<!-- listening to UI events -->
+<script>
+    let x = document.getElementById('x')
+    let y = document.getElementById('res')
+    x.onkeyup=evt=>{
+        y.innerText=jonas.double(x.value)
+    }
+</script>
+
+<!-- setting generic styling -->
 <link href="jonas.css" rel="stylesheet">
